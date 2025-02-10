@@ -49,7 +49,7 @@ class BookList extends Component {
             {this.state.selected ? (
               <CommentArea asin={this.state.selected} />
             ) : (
-              <Alert variant="success">
+              <Alert variant="success" className="sticky-top">
                 <Alert.Heading>Seleziona un Libro</Alert.Heading>
               </Alert>
             )}

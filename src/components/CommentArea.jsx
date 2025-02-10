@@ -45,7 +45,7 @@ class CommentArea extends Component {
   render() {
     console.log(this);
     return (
-      <div className="text-center">
+      <div className="text-center sticky-top">
         {this.state.isLoading && <Loading />}
         {this.state.isError && <Error />}
         <AddComment asin={this.props.asin} />
