@@ -15,7 +15,7 @@ class BookList extends Component {
     return (
       <>
         <Row>
-          <Col md={6}>
+          <Col md={8}>
             <Row className="justify-content-center mt-5">
               <Col xs={12} md={4} className="text-center">
                 <Form.Group>
@@ -45,7 +45,7 @@ class BookList extends Component {
             </Row>
           </Col>
 
-          <Col md={6}>
+          <Col md={4}>
             {this.state.selected ? (
               <CommentArea asin={this.state.selected} />
             ) : (
